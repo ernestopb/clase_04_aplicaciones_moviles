@@ -1,6 +1,8 @@
 var app = new Vue({
   el: '#app',
   data: {
+    email: '',
+    listaEmails: [],
     message: 'Mimimimi!',
     mostrarBoton: true,
     codigoHtml: '<h1>Título de la página</h1>',
@@ -14,6 +16,10 @@ var app = new Vue({
     },
     enviar: function(){
       alert('estamos enviado...')
+    },
+    agregarEmail: function(){
+      this.listaEmails.push(this.email);
+      this.email = "";
     }
   }
 })

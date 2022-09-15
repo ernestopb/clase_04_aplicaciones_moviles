@@ -13,7 +13,10 @@
 
   <div id="app">
     <input v-on:keyup.enter="enviar" v-model="email">
-    <button v-on:click="mostrarTextoEnConsola">MOSTRAR TEXTO EN CONSOLA</button>
+    <button v-on:click="agregarEmail">agregar email</button>
+   
+
+    <p>{{listaEmails}}</p>
   </div>
 
 
