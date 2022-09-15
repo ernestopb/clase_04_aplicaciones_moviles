@@ -7,6 +7,14 @@ var app = new Vue({
     estaChequeado: true,
     contador: 0,
     listaDeElementos: []
+  },
+  methods: {
+    mostrarTextoEnConsola: function(){
+      console.log('texto en consola')
+    },
+    enviar: function(){
+      alert('estamos enviado...')
+    }
   }
 })
 
