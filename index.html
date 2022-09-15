@@ -12,27 +12,7 @@
 <body>
 
   <div id="app">
-    <p>
-      {{ message }}
-    </p>
-    <div style="border: 1px solid #000;" v-bind:class="!estaChequeado ? 'hayUnError': 'estaBien'">
-      <p>Comodín</p>
-      <div v-html="codigoHtml"></div>
-    </div>
-    <input type="checkbox" v-model="estaChequeado">
-    <button v-show="mostrarBoton">Enviar</button>
-
-    <div class="contadorContainer">
-      <p v-if="contador > 5">El contador es mayor a 5 ({{contador}})</p>
-      <p v-if="contador == 5">El contador es igual a 5 ({{contador}})</p>
-      <p v-if="contador < 5">El contador es menor a 5 ({{contador}})</p>
-    </div>
-
-    <div class="listaContenedor">
-      <ul>
-        <li v-for="item in listaDeElementos">El elemento de la lsita es: {{item}}</li>
-      </ul>
-    </div>
+    
   </div>
 
 
